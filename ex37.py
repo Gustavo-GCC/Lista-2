@@ -1,21 +1,21 @@
 #Importação de bibliotecas
 
 #Declaração de variáveis
-n: int = 0
-fibonacci: int = 1
+entrada: int = 0
+fibonacci: int = 0
+proximo_termo: int = 1
 contador: int = 0
 sequencia: int = 0
 
 #Início
 
-n = int(input('Digite um número da sequência de Fibonacci: '))
+entrada = int(input('Digite um número da sequência de Fibonacci: '))
 
-print(contador)
-
-while contador <= n:
-    sequencia += fibonacci
-    print(sequencia)
-    fibonacci = sequencia
+while contador < entrada:
+    print(fibonacci)
+    sequencia = fibonacci + proximo_termo
+    fibonacci = proximo_termo
+    proximo_termo = sequencia
     contador += 1
 
 #Fim
